@@ -1,0 +1,117 @@
+{
+  "basics": {
+    "name": "Lui Rabideau",
+    "label": "Student",
+    "picture": "https://github.com/luirabideau.png",
+    "email": "erabidea@hawaii.edu",
+    "phone": "808-277-1149",
+    "website": "https://luirabideau.github.io",
+    "summary": "I am pursuing a BBA in Management Information Systems at the University of Hawaii at Manoa. I expect to graduate in Spring 25.",
+    "location": {"postalCode": "96734", "city": "Kailua", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "luirabideau", "url": "https://github.com/luirabideau" },
+    ]
+  },
+  "interests": [
+    { "name": "Food" },
+    { "name": "Gaming" },
+    { "name": "Aikido" },
+    { "name": "Travelling" },
+    { "name": "Building Computers" },
+    { "name": "Game Modding" },
+    { "name": "Data Analytics" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Information Technology Management (expected Spring, 2025)",
+      "studyType": "B.B.A.",
+      "startDate": "2023",
+      "endDate": "Present",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "Windward Community College, Kaneohe, HI",
+      "area": "Natural Sciences in Engineering",
+      "studyType": "A.S.",
+      "startDate": "2021",
+      "endDate": "2023",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Target Corporation",
+      "position": "General Merchandise Team Member",
+      "website": "https://www.target.com/",
+      "startDate": "2020",
+      "endDate": "2023",
+      "summary": "Worked as part of a large team to manage and organize inventory."
+    },
+    {
+      "company": "Hawaii State Public Library System, Kaneohe Branch",
+      "position": "Student Helper (paid)",
+      "website": "https://www.librarieshawaii.org/",
+      "startDate": "2017",
+      "endDate": "20120",
+      "summary": "Maintained and organized over 150,000 books and media."
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Kaneohe Aikido Club",
+      "position": "Instructor and Board Member",
+      "startDate": "2015",
+      "endDate": "Present"
+    },
+    {
+      "organization": "Phi Theta Kappa Honor Society",
+      "position": "Vice President of Leadership",
+      "startDate": "2021",
+      "endDate": "2022"
+    },
+    {
+      "organization": "St. Ann Church",
+      "position": "Youth Leader",
+      "startDate": "2015",
+      "endDate": "2022"
+    }
+      ],
+  "awards": [
+    {
+      "title": "Vice President of Leadership - ",
+      "date": "2021-2022",
+      "awarder": "Phi Theta Kappa Honor Society",
+      "summary": "An Honor Society for University of Hawaii Community College Students with an overall GPA of 3.0."
+    },
+    {
+      "title": "Shodan Canidate",
+      "date": "2023",
+      "awarder": "Kaneohe Aikido Club",
+      "summary": "Black Belt canidate in Aikido Yuinshinkai."
+    },
+    {
+      "title": "Windward Community College Dean’s List",
+      "date": "Spring 2021, Summer 2021, Fall 2021",
+      "awarder": "Windward Community College Dean",
+       "summary": "Overall GPA: 3.98"
+}
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}
