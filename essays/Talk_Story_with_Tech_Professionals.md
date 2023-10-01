@@ -10,7 +10,6 @@ labels:
   - WODs
   - Essay
 ---
-Talk Story with Tech Professionals
 
 Talk Story with Tech Professionals is a PACE event where students are given the opportunity to learn from those already well-established in the industry. The event is fairly informal, which is a key component of it. The chance to talk to relevant professionals about topics you would never bring up in an interview or career fair is invaluable. The professionals in particular at the event were extremely knowledgeable and really breathed in a sense of relief about the ITM career. 
 
