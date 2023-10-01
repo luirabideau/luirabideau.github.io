@@ -1,3 +1,15 @@
+---
+layout: essay
+type: essay
+title: "Preparing for WODs"
+# All dates must be YYYY-MM-DD format!
+date: 2023-09-30
+published: true
+labels:
+  - ITM352
+  - WODs
+  - Opinions
+---
 ## What are WODs?
 WODs, or Workouts Of the Day, are take-home assignments meant to help students become more familiar with the class material. 
 My Approach
