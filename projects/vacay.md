@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/vacay/vacay-square.png
-title: "Vacay"
+title: "IN PROGRESS"
 date: 2015
 published: true
 labels:
