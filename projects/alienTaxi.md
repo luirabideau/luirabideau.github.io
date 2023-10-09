@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/alienTaxi3.jpg
+image: img/alienTaxi3.png
 title: "Alien Taxi"
 date: 2021
 published: true
