@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/alienTaxi3.jpg
 title: "Alien Taxi"
 date: 2021
 published: true
@@ -13,9 +13,9 @@ summary: "My team created a 2-D space themed game for our final project in an El
 ---
 
 <div class="text-center p-4">
-  <img width="200px" src="../img/micromouse/micromouse-robot.png" class="img-thumbnail" >
+  <img width="200px" src="../img/alienTaxi1.png" class="img-thumbnail" >
   <img width="200px" src="../img/micromouse/micromouse-robot-2.jpg" class="img-thumbnail" >
-  <img width="200px" src="../img/micromouse/micromouse-circuit.png" class="img-thumbnail" >
+  <img width="200px" src="../img/alienTaxi2.png" class="img-thumbnail" >
 </div>
 
 Alien Taxi is a 2-D space themed game were a player transports Alien passengers from one point to another. The game is played on a 20 by 20 grid of cells that may contain obstacles, nothing, or Fuel stops. The game has 3 difficulty levels and ends the player transports 3 passengers. 
