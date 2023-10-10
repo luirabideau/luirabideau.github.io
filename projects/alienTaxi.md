@@ -30,6 +30,7 @@ As <b>Lead Gameplay Developer</b> I oversaw the creative direction and technical
 </div>
 We ran into many technical and design issues when developing the game. The biggest technical issue was that we wanted to create a randomly generated obstacle field that was different every game. This tied directly to our biggest design issue which was that we did not know how to make multiple levels of difficulty. The solution we found was to generate the obstacles on the grid before the game even started. The difficulty of the level would depend on the density of obstacles. 
 Here is some code that shows how the obstacles were randomly generated every game:
+
 ```cpp
 //functions that randomize the obstacles  
 }
@@ -42,6 +43,7 @@ int Level2(level){
   return num;
 }
 ```
+
 The most important thing I learned from this project is that good communication and teamwork goes further than one person with all the skills. Most of the problems we ran into weren’t easily solved and required us to talk it out, weighing our solutions against time and effort. 
 
 We received top grades for the project, uniquely standing out for Alien Taxi’s fun design and engaging gameplay.
