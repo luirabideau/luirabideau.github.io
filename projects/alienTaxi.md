@@ -12,7 +12,7 @@ labels:
 summary: "My team created a 2-D space themed game for our final project in Electrical Engineering 160."
 ---
 
-<div class="text-center p-4">
+<div>
   <img width="400px" height="400px" src="../img/alienTaxi1.png" class="img-thumbnail" >
   <img width="400px" height="400px" src="../img/alienTaxi2.png" class="img-thumbnail" >
 </div>
