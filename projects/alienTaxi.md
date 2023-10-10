@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/alienTaxi3.png
 title: "Alien Taxi"
-date: 2021
+date: 12/10/2021
 published: true
 labels:
   - 2-D Game
