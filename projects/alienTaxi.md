@@ -12,11 +12,11 @@ labels:
 summary: "My team created a 2-D space themed game for our final project in Electrical Engineering 160."
 ---
 
-<div>
-  <img width="400px" height="400px" src="../img/alienTaxi1.png" class="img-thumbnail" >
-  <img width="400px" height="400px" src="../img/alienTaxi2.png" class="img-thumbnail" >
+<div>  
+  <img width="350px" height="350px" src="../img/alienTaxi2.png" class="img-thumbnail" >
+  <img width="350px" height="350px" src="../img/alienTaxi1.png" class="img-thumbnail" >
 </div>
-
+<br>
 <b>Alien Taxi</b> is a 2-D space themed game where a player transports Alien passengers from one point to another. The game is played on a 20 by 20 grid of cells that may contain obstacles, nothing, or Fuel stops. The game has 3 difficulty levels and ends when the player transports 3 passengers. The purpose of this project was to gain a deeper understanding of programming and develop programming skills. 
 
 For this project, I served as <b>Project Facilitator</b> and <b>Lead Gameplay Developer</b>.
@@ -28,7 +28,7 @@ As <b>Lead Gameplay Developer</b> I oversaw the creative direction and technical
 <div>
   <img src="../img/alienTransporter2.png" class="img-thumbnail" >
 </div>
-
+<br>
 We ran into many technical and design issues when developing the game. The biggest technical issue was that we wanted to create a randomly generated obstacle field that was different every game. This tied directly to our biggest design issue which was that we did not know how to make multiple levels of difficulty. The solution we found was to generate the obstacles on the grid before the game even started. The difficulty of the level would depend on the density of obstacles. 
 Here is some code that shows how the obstacles were randomly generated every game:
 
