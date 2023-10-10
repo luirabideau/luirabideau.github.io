@@ -25,8 +25,8 @@ As<b> Project Facilitator </b>, I was responsible for delegating tasks, keeping 
 
 As <b>Lead Gameplay Developer</b> I oversaw the creative direction and technical scope of the project. Alien Taxi is directly inspired from a 2-D multiplayer keyboard game I played when I was younger.  That game, appropriately named “Alien Transporter” is unfortunately no longer available. I took the idea of transporting alien passengers with fuel and obstacle limitations, and brought it to my team who helped me realize it into our final project. 
 <div class="text-center p-4">
-  <img width="400px" height="400px" src="../img/alienTransporter1.png" class="img-thumbnail" >
-  <img width="400px" height="400px" src="../img/alienTransporter2.png" class="img-thumbnail" >
+  <img src="../img/alienTransporter1.png" class="img-thumbnail" >
+  <img src="../img/alienTransporter2.png" class="img-thumbnail" >
 </div>
 We ran into many technical and design issues when developing the game. The biggest technical issue was that we wanted to create a randomly generated obstacle field that was different every game. This tied directly to our biggest design issue which was that we did not know how to make multiple levels of difficulty. The solution we found was to generate the obstacles on the grid before the game even started. The difficulty of the level would depend on the density of obstacles. 
 Here is some code that shows how the obstacles were randomly generated every game:
