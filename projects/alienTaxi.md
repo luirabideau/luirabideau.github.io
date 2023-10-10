@@ -17,7 +17,7 @@ summary: "My team created a 2-D space themed game for our final project in Elect
   <img width="400px" height="400px" src="../img/alienTaxi2.png" class="img-thumbnail" >
 </div>
 
-Alien Taxi is a 2-D space themed game where a player transports Alien passengers from one point to another. The game is played on a 20 by 20 grid of cells that may contain obstacles, nothing, or Fuel stops. The game has 3 difficulty levels and ends when the player transports 3 passengers. The purpose of this project was to gain a deeper understanding of programming and develop programming skills. 
+<b>Alien Taxi</b> is a 2-D space themed game where a player transports Alien passengers from one point to another. The game is played on a 20 by 20 grid of cells that may contain obstacles, nothing, or Fuel stops. The game has 3 difficulty levels and ends when the player transports 3 passengers. The purpose of this project was to gain a deeper understanding of programming and develop programming skills. 
 
 For this project, I served as <b>Project Facilitator</b> and <b>Lead Gameplay Developer</b>.
 
@@ -43,7 +43,7 @@ int Level2(level){
 }
 ```
 
-The <i>most important thing</i> I learned from this project is that good communication and teamwork goes further than one person with all the skills. Most of the problems we ran into weren’t easily solved and required us to talk it out, weighing our solutions against time and effort. 
+The <b>most important thing</b> I learned from this project is that good communication and teamwork goes further than one person with all the skills. Most of the problems we ran into weren’t easily solved and required us to talk it out, weighing our solutions against time and effort. 
 
 We received top grades for the project, uniquely standing out for Alien Taxi’s fun design and engaging gameplay.
 
