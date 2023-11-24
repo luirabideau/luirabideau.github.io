@@ -11,7 +11,7 @@ labels:
   - Essay
 ---
 
-## My programming skills have greatly improved in the following ways:
+<b> My programming skills have greatly improved in the following ways: </b>
 I am able to program in javascript and be able to finish parts of assignment 1 without help or instruction. 
 
 ## I need to work on the following to improve my programming skills:
