@@ -30,7 +30,7 @@ labels:
 <p>Every WOD should have a screencast. Some of the labs can be shortened. All of the labs need more clear instructions. There should be more of an emphasis on using exact terms, asking exact questions, thinking like a programmer, and in-code comments. Additionally, the class website needs to be fixed (spelling errors, grammatical errors, multiple pages for the same lab etc). </p>
 
 <p><b> What helps me the most in class are (WODs, Labs, class website, screencasts, readings, quizzes, one on one help, working with classmates, etc.):</b></p>
-<p><b> Working with classmates</p>
+<p><b> Working with classmates</b></p>
 <p>Neither my classmates nor I would know the answer, but having people to go to office hours/ask dumb questions with, really made a huge difference.</p>
 <p><b> Labs </b></p>
 <p>Everything in the labs corresponds to the assignments. Every lab is important, although the order doesn’t always make sense. </p>
