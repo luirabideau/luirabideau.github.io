@@ -14,7 +14,7 @@ labels:
 <h5>1. Briefly describe your system (e.g. A store selling Pokemon game cards)</h5>
 <p>My website is a website that sells mini-skyscraper figurines.</p>
 <h5>2. Any notable shortcomings, bugs, problems, or additional features not implemented?</h5>
-<p></p>
+<p>The security really isn't that good. I simply don't know enough about web security to add too much without fully copying material from somewhere. The only real problem is that the email feature does not work. I just do not understand it enough to fix it, unfortunately.</p>
 <h5>3. Describe what you are most proud of about your system:</h5>
 <p>I am most proud of the navbar. I am sure that absolutely everyone else would have done just as good if not as well as I have done. But the navbar is my favorite because I made the whole thing in one sitting, I didn’t make mistakes– I just did it.</p>
 <h5>4. Describe what you are least happy with your system:</h5>
