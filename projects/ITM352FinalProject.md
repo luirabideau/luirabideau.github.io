@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/alienTaxi3.png
+image: img/RyersMainPage.png
 title: "ITM352: e-Commerce Website"
 date: 12/28/2023
 published: true
