@@ -22,8 +22,6 @@ summary: "I created a e-Commerce Website for a non-existent Architectural Model 
 
 By far, the most important part of this project was planning and organization. The first thing I did upon starting the project was to gather all the code I had from previous assignments and sort through it all to find what was and was not useful. After that, I labled everything in as much detail as possible, with the aim being that any random person would be able to discern what each block of code and variable is used for. 
 
-I was 
-<br>
 The project had 4 main objectives that built off the work I had done during the whole course. They are as follows: 
 1) add a shopping cart feature to the website so that users can shop at their leisure. 
 2) enable arbitrary navigation of multiple product pages. 
@@ -31,9 +29,9 @@ The project had 4 main objectives that built off the work I had done during the 
 4) maintain a user’s state (i.e. whether they are logged in).
 
 The first objective was the most difficult and it required quite a bit of effort because it was my first time using sessions in JavaScript. At first it was difficult, but I kept working at it until I achieved my goal. The other onjectives were fairly easy because I had already designed my code in a way that made additional modifications easy. 
-<br>
-I ran into many technical and design issues when developing the game. The biggest technical issue I had, had to do with security. I don't know enough about website security to properly protect my website. Unfortunately there are fairly creative ways to work around the "guards" I put in the code. 
-<br>
+
+I ran into many technical and design issues when developing the game. The biggest technical issue I had, had to do with security. I don't know enough about website security to properly protect my website. Unfortunately there are fairly creative ways to work around the "guards" I put in the code. As of this writing, this coming semester I will be taking a whole class dedicated to web security, hopefully I'll come back to this and explain the security issues of the website in better details.
+
 Here is some code that shows how the cart is updated:
 
 ```cpp
