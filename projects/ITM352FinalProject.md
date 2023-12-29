@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/RyersMainPage.png
+image: img/RyersMainPageSQ.png
 title: "ITM352: e-Commerce Website"
 date: 12/28/2023
 published: true
@@ -21,6 +21,10 @@ summary: "I created a e-Commerce Website for a non-existent Architectural Model 
 [Website Demo](https://youtu.be/lI1ncUDQii8?si=izOb77Pf_yqWlMEa)
 
 By far, the most important part of this project was planning and organization. The first thing I did upon starting the project was to gather all the code I had from previous assignments and sort through it all to find what was and was not useful. After that, I labled everything in as much detail as possible, with the aim being that any random person would be able to discern what each block of code and variable is used for. 
+
+<div>  
+  <img src="../img/ITM352_A3_SiteMap0.png" class="img-thumbnail" >
+</div>
 
 The project had 4 main objectives that built off the work I had done during the whole course. They are as follows: 
 1) add a shopping cart feature to the website so that users can shop at their leisure. 
