@@ -26,6 +26,7 @@ By far, the most important part of this project was planning and organization. T
 <div>  
   <img src="../img/ITM352_A3_SiteMap0.png" class="img-thumbnail" >
 </div>
+Above is a screenshot of the site map I made for the website.
 
 The project had 4 main objectives that built off the work I had done during the whole course. They are as follows: 
 1) add a shopping cart feature to the website so that users can shop at their leisure. 
