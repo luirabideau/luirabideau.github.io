@@ -15,6 +15,7 @@ summary: "I created a e-Commerce Website for a non-existent Architectural Model 
 <div>  
   <img src="../img/RyersMainPage.png" class="img-thumbnail" >
 </div>
+Above is a screenshot of the home page.
 <br>
 <b>Ryer Architects</b> is the website I submitted for the final project of ITM352. For this project, I worked alone although I did recieve occasional help from the professor, Dr. Port. 
 
