@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Alien Taxi | Lui Rabideau | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/luirabideau.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lui Rabideau | Professional Portfolio">
+    <meta property="og:url" content="https://luirabideau.github.io/projects/alienTaxi.html">
+    <meta property="og:title" content="Alien Taxi | Lui Rabideau | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/luirabideau.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Alien Taxi | Lui Rabideau | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Lui Rabideau</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Alien Taxi</h1>
+ <div>  
+  <img width="350px" height="350px" src="../img/alienTaxi2.png" class="img-thumbnail" />
+  <img width="350px" height="350px" src="../img/alienTaxi1.png" class="img-thumbnail" />
+</div>
+<p><br />
+<b>Alien Taxi</b> is a 2-D space themed game where a player transports Alien passengers from one point to another. The game is played on a 20 by 20 grid of cells that may contain obstacles, nothing, or Fuel stops. The game has 3 difficulty levels and ends when the player transports 3 passengers. The purpose of this project was to gain a deeper understanding of programming and develop programming skills.</p>
+
+<p>For this project, I served as <b>Project Facilitator</b> and <b>Lead Gameplay Developer</b>.</p>
+
+<p>As<b> Project Facilitator </b>, I was responsible for delegating tasks, keeping the project on schedule, updating everyone on new developments, and making sure there were clear channels of communication. The project required my team to clearly label and document all our work, which I primarily oversaw.</p>
+
+<p>As <b>Lead Gameplay Developer</b> I oversaw the creative direction and technical scope of the project. Alien Taxi is directly inspired from a 2-D multiplayer keyboard game I played when I was younger.  That game, appropriately named “Alien Transporter” is unfortunately no longer available. I took the idea of transporting alien passengers with fuel and obstacle limitations, and brought it to my team who helped me realize it into our final project.</p>
+
+<div>
+  <img src="../img/alienTransporter2.png" class="img-thumbnail" />
+</div>
+<p><br />
+We ran into many technical and design issues when developing the game. The biggest technical issue was that we wanted to create a randomly generated obstacle field that was different every game. This tied directly to our biggest design issue which was that we did not know how to make multiple levels of difficulty. The solution we found was to generate the obstacles on the grid before the game even started. The difficulty of the level would depend on the density of obstacles. 
+Here is some code that shows how the obstacles were randomly generated every game:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//functions that randomize the obstacles  </span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">Level2</span><span class="p">(</span><span class="n">level</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">num</span><span class="p">;</span>
+  <span class="n">num</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span> <span class="o">%</span><span class="mi">19</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">num</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">19</span><span class="p">){</span>
+      <span class="n">num</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span> <span class="o">%</span><span class="mi">19</span><span class="p">;</span>
+      <span class="p">}</span>
+  <span class="k">return</span> <span class="n">num</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <b>most important thing</b> I learned from this project is that good communication and teamwork goes further than one person with all the skills. Most of the problems we ran into weren’t easily solved and required us to talk it out, weighing our solutions against time and effort.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="cm">/*     File : AlienTaxi.c        *
+ *     By   : Lui                 *
+ *     By   : Sam                 *
+ *     By   : Kat                 *
+ *     Class: EE160               *
+ *     Team : Software Softies    *
+ *     Date : 12/10/2021          */</span>
+</code></pre></div></div>
+
+<p>We received top grades for the project, uniquely standing out for Alien Taxi’s fun design and engaging gameplay.</p>
+
+<p>You can learn more about EE160 here <a href="https://catalog.leeward.hawaii.edu/ee-160">EE160 at Leeward Community College</a>.</p>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

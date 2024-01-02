@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="ITM352: e-Commerce Website | Lui Rabideau | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/luirabideau.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lui Rabideau | Professional Portfolio">
+    <meta property="og:url" content="https://luirabideau.github.io/projects/ITM352FinalProject.html">
+    <meta property="og:title" content="ITM352: e-Commerce Website | Lui Rabideau | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/luirabideau.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>ITM352: e-Commerce Website | Lui Rabideau | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Lui Rabideau</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">ITM352: e-Commerce Website</h1>
+ <div>  
+  <img src="../img/RyersMainPage.png" class="img-thumbnail" />
+</div>
+<p>Above is a screenshot of the home page.
+<br />
+<b>Ryer Architects</b> is the website I submitted for the final project of ITM352. For this project, I worked alone although I did recieve occasional help from the professor, Dr. Port.</p>
+
+<p><a href="https://youtu.be/lI1ncUDQii8?si=izOb77Pf_yqWlMEa">Website Demo</a></p>
+
+<p>By far, the most important part of this project was planning and organization. The first thing I did upon starting the project was to gather all the code I had from previous assignments and sort through it all to find what was and was not useful. After that, I labled everything in as much detail as possible, with the aim being that any random person would be able to discern what each block of code and variable is used for.</p>
+
+<div>  
+  <img src="../img/ITM352_A3_SiteMap0.png" class="img-thumbnail" />
+</div>
+<p>Above is a screenshot of the site map I made for the website.</p>
+
+<p>The project had 4 main objectives that built off the work I had done during the whole course. They are as follows: 
+1) add a shopping cart feature to the website so that users can shop at their leisure. 
+2) enable arbitrary navigation of multiple product pages. 
+3) email the user the completed invoice for each transaction.
+4) maintain a user’s state (i.e. whether they are logged in).</p>
+
+<p>The first objective was the most difficult and it required quite a bit of effort because it was my first time using sessions in JavaScript. At first it was difficult, but I kept working at it until I achieved my goal. The other onjectives were fairly easy because I had already designed my code in a way that made additional modifications easy.</p>
+
+<p>I ran into many technical and design issues when developing the game. The biggest technical issue I had, had to do with security. I don’t know enough about website security to properly protect my website. Unfortunately there are fairly creative ways to work around the “guards” I put in the code. As of this writing, this coming semester I will be taking a whole class dedicated to web security, hopefully I’ll come back to this and explain the security issues of the website in better details.</p>
+
+<p>Here is some code that shows how the cart is updated:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">app</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="err">'</span><span class="o">/</span><span class="n">update_cart</span><span class="err">'</span><span class="p">,</span> <span class="n">function</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">next</span><span class="p">){</span><span class="c1">// updating the cart </span>
+   <span class="n">console</span><span class="p">.</span><span class="n">log</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">query</span><span class="p">);</span>
+   <span class="c1">// update the cart for this item</span>
+   <span class="n">request</span><span class="p">.</span><span class="n">session</span><span class="p">.</span><span class="n">cart</span><span class="p">[</span><span class="n">request</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">location</span><span class="p">][</span><span class="err">`</span><span class="n">quantity</span><span class="err">$</span><span class="p">{</span><span class="n">request</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">productIndex</span><span class="p">}</span><span class="err">`</span><span class="p">]</span> <span class="o">=</span> <span class="n">Number</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="n">value</span><span class="p">);</span>
+   <span class="c1">// the response will be json</span>
+   <span class="n">response</span><span class="p">.</span><span class="n">type</span><span class="p">(</span><span class="err">'</span><span class="n">json</span><span class="err">'</span><span class="p">);</span>
+   <span class="c1">// turning the cart into a JSON string and sending it</span>
+   <span class="n">response</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">JSON</span><span class="p">.</span><span class="n">stringify</span><span class="p">(</span><span class="n">request</span><span class="p">.</span><span class="n">session</span><span class="p">.</span><span class="n">cart</span><span class="p">));</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>I received an A grade for the project, it was by far my favorite and but most difficult portion of the ITM352 class.</p>
+
+<p>You can learn more about ITM352 here <a href="https://shidler.hawaii.edu/courses/itm/352">ITM352 at the University of Hawai’i at Manoa Shidler Business College</a>.</p>
+
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
