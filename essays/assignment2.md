@@ -10,8 +10,9 @@ labels:
   - Assignment 2
   - Reflection
 ---
-Well... you shall <a href="https://youtu.be/Ngfovy91qRM">receive</a>.
+Well... you shall receive (<a href="https://youtu.be/Ngfovy91qRM">click me!</a>).
 Oh no. Lui doesn't know how to format CSS.
+<p>Lui obviously knows how to format CSS, try right clicking the page and viewing the Page Source</p>
 <p style = "color:white">
 /* Created by Lui Rabideau on 12/5/2023 */
 /* Incorporated into the design from W3schools: W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
