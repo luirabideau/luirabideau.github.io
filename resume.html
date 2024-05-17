@@ -1,245 +1,67 @@
----
-title: Resume
-layout: home
----
-
-<div style="background-color: var(--tf-page-bg-color)" class="bg-gradient py-3">
-  <div class="container">
-
-    <div class="row">
-      <div class="col">
-        <h1 class="display-4 text-center">{{ site.data.bio.basics.name }}</h1>
-      </div>
+<!------------------ Created by Lui Rabideau, due on 12/15/2023 ---------------------->
+<!-- Design from W3schools: W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes -->
+<!-------- (https://www.w3schools.com/w3css/tryw3css_templates_architect.htm) -------->
+<!----------------------------- UHM ITM352 Assignment 3 ------------------------------>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- favicon -->
+<link rel="stylesheet" href="./css/home.css">
+<link rel="icon" href="./images/letterR.ico" type="image/x-icon">
+<link rel="shortcut icon" href="./images/letterR.png" type="image/png">
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+     <a href="./index.html" class="w3-bar-item w3-button"><b>Ryer</b> Architects</a>
+     <!-- Float links to the right. Hide them on small screens -->
+     <div class="w3-right w3-hide-small">
+       <a href="./products.html?location=NewYork" class="w3-bar-item w3-button">New York</a>
+       <a href="./products.html?location=SanFran" class="w3-bar-item w3-button">San Francisco</a>
+       <a href="./products.html?location=Chicago" class="w3-bar-item w3-button">Chicago</a>
+       <a href="./team.html" class="w3-bar-item w3-button">Our Team</a>
+       <a href="./logout" class="w3-bar-item w3-button" onclick="logout()">Log Out</a>
+       <a href="./shoppingCart.html" class="w3-bar-item w3-button">${nameCookie}'s Cart: (${total}) items</a>
+     </div>
     </div>
-
-    <div class="row">
-      <div class="col">
-        {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-        {% capture label %}{{ site.data.bio.basics.website | remove: "http://" | remove: "https://" }}{% endcapture %}
-        <p class="mb-1">{% include about/social.html url=url name='house' label=label %} </p>
-
-        {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-        {% capture label %}{{ site.data.bio.basics.email }}{% endcapture %}
-        <p class="mb-1">{% include about/social.html url=url name='envelope' label=label %}</p>
-
-        {% for profile in site.data.bio.basics.profiles %}
-          {% capture url %}{{ profile.url }}{% endcapture %}
-          {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-          {% capture label %}{{ profile.username }}{% endcapture %}
-          <p class="mb-1">{% include about/social.html url=url name=name label=label %}</p>
-        {% endfor %}
-      </div>
-      <div class="col">
-        <p class="mb-1 text-end">{{ site.data.bio.basics.location.address }}</p>
-        <p class="mb-1 text-end">{{ site.data.bio.basics.location.city }}, {{ site.data.bio.basics.location.region }} {{ site.data.bio.basics.location.postalCode }} {{ site.data.bio.basics.location.countryCode }}</p>
-        <p class="mb-1 text-end">{{ site.data.bio.basics.phone }}</p>
-      </div>
+   </div>
+<br><br><br><br>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="./images/main.jpg" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Ryer</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
     </div>
-
-    <div class="row pt-4 align-items-center">
-      <div class="col-lg-3">
-        <h1 class="display-6 text-start m-0">Interests</h1>
-      </div>
-      <div class="col-lg-9">
-        <p class="m-0">
-          {% for entry in site.data.bio.interests %}
-          {{ entry.name }}
-          <!-- Unfortunately the following must all be on a single line so that there are no spaces before the commas. -->
-          {% if entry.keywords and entry.keywords.size > 0 %}({% for keyword in entry.keywords %}{{ keyword }}{% if forloop.last != true %},{% endif %}{% endfor %}){% endif %}{% if forloop.last != true %}, {% endif %}
-          {% endfor %}
+</header>
+<!-- Page content -->
+<div class="w3-content w3-padding content" style="max-width:1564px">
+<!-- Welcome Section -->
+    <div class="w3-container w3-padding-32">
+      <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Welcome to <b>Ryer</b> Architects</h2>
+      <p style="text-align: center; font-size: medium;">
+        At Ryer, we believe that our architecture is more than just creating models of buildings; it's about shaping environments that inspire and elevate the human experience.
+      </p><p style="text-align: center;"> 
+        Established 2017, our firm is a collective of passionate architects and designers dedicated to crafting pieces that seamlessly blend aesthetics, functionality, and sustainability.
+      </p>
+    </div>
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
+        <p>
+          At Ryer, we embrace innovation and stay at the forefront of design trends and technologies. We are committed to sustainable practices, integrating eco-friendly solutions into our designs to create spaces that are not only visually stunning but also environmentally responsible.
+        </p><p>
+          Collaboration is at the heart of our process. We work closely with our clients, listening to their aspirations and concerns, to co-create spaces that reflect their vision. Our transparent communication, attention to detail, and commitment to timelines ensure a seamless experience from concept to completion.
         </p>
-      </div>
     </div>
-
-    {% if site.data.bio.skills %}
-    <div class="row pt-4 align-items-center">
-      <div class="col-lg-3">
-        <h1 class="display-6 text-start m-0">Skills</h1>
-      </div>
-      <div class="col-lg-9">
-        {% for entry in site.data.bio.skills %}
-          <p class="m-0">
-            <b>{{ entry.name }}:</b>
-              {% for keyword in entry.keywords %}
-                {{ keyword }}{% if forloop.last != true %}, {% endif %}
-              {% endfor %}
-          </p>
-        {% endfor %}
-      </div>
+    <!-- Image of location/map -->
+    <div class="w3-container">
+      <img src="./images/costalview.jpg" class="w3-image" style="width:100%">
     </div>
-    {% endif %}
-
-    {% if site.data.bio.education %}
-    <div class="row pt-4 align-items-start">
-      <div class="col-lg-3">
-        <h1 class="display-6 text-start m-0">Education</h1>
-      </div>
-      <div class="col-lg-9">
-        {% for entry in site.data.bio.education %}
-          <div class="row mb-3">
-            <div class="col-9">
-              <p class="m-0"><b>{{ entry.institution }}</b></p>
-              <p class="m-0">{{ entry.studyType }}, {{ entry.area }}</p>
-              {% if entry.courses %}
-                <ul>
-                  {% for course in entry.courses %}
-                    <li>{{ course }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </div>
-          <div class="col-3">
-            <p class="m-0 text-end">
-              {% if entry.startDate %}
-                {{ entry.startDate | slice: 0,4 }}
-              {% endif %}
-              {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-              -
-              {% endif %}
-              {% if entry.endDate %}
-                {% if entry.endDate != "Present" %}
-                  {{ entry.endDate | slice: 0,4 }}
-                {% else %}
-                  {{ entry.endDate }}
-                {% endif %}
-              {% endif %}
-            </p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    {% if site.data.bio.work %}
-    <div class="row pt-4 align-items-start">
-      <div class="col-lg-3">
-        <h1 class="display-6 text-start m-0">Work</h1>
-      </div>
-      <div class="col-lg-9">
-        {% for entry in site.data.bio.work %}
-          <div class="row mb-3">
-            <div class="col-9">
-              <p class="mb-0"><b>{{ entry.position }}, {{ entry.company }}</b></p>
-              <p class="mb-0"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
-              <p class="mb-0">{{ entry.summary }}</p>
-              {% if entry.highlights %}
-                <ul>
-                  {% for highlight in entry.highlights %}
-                    <li>{{ highlight }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </div>
-            <div class="col-3">
-              <p class="m-0 text-end">
-                {% if entry.startDate %}
-                  {{ entry.startDate | slice: 0,4 }}
-                {% endif %}
-                {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-                -
-                {% endif %}
-                {% if entry.endDate %}
-                {% if entry.endDate != "Present" %}
-                  {{ entry.endDate | slice: 0,4 }}
-                {% else %}
-                  {{ entry.endDate }}
-                {% endif %}
-              {% endif %}
-              </p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    {% if site.data.bio.volunteer %}
-      <div class="row pt-4 align-items-start">
-        <div class="col-lg-3">
-          <h1 class="display-6 text-start m-0">Activities</h1>
-        </div>
-        <div class="col-lg-9">
-          {% for entry in site.data.bio.volunteer %}
-          <div class="row mb-3">
-            <div class="col-9">
-              <p class="mb-0"><b>{{ entry.position }}{% if entry.organization %}, {{ entry.organization }}{% endif %}</b></p>
-              <p class="mb-0"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
-              <p class="mb-0">{{ entry.summary }}</p>
-              {% if entry.highlights %}
-                <ul>
-                {% for highlight in entry.highlights %}
-                  <li>{{ highlight }}</li>
-                {% endfor %}
-              </ul>
-              {% endif %}
-            </div>
-            <div class="col-3">
-              <p class="m-0 text-end">
-                {% if entry.startDate %}
-                  {{ entry.startDate | slice: 0,4 }}
-                {% endif %}
-                {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-                -
-                {% endif %}
-                {% if entry.endDate %}
-                  {% if entry.endDate != "Present" %}
-                    {{ entry.endDate | slice: 0,4 }}
-                  {% else %}
-                    {{ entry.endDate }}
-                  {% endif %}
-                {% endif %}
-              </p>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-
-    {% if site.data.bio.awards %}
-    <div class="row pt-4 align-items-start">
-      <div class="col-lg-3">
-        <h1 class="display-6 text-start m-0">Awards</h1>
-      </div>
-
-      <div class="col-lg-9">
-      {% for entry in site.data.bio.awards %}
-        <div class="row mb-3">
-          <div class="col-9">
-            <p class="mb-0">
-              <b>{{ entry.title }}</b>, {{ entry.awarder }}
-            </p>
-            <p class="mb-0">{{ entry.summary }}</p>
-          </div>
-          <div class="col-3">
-            <p class="m-0 text-end">
-              {{ entry.date}}
-            </p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}
-
-    {% if site.data.bio.references %}
-    <div class="row pt-4 align-items-center">
-      <div class="col-lg-3">
-        <h1 class="display-6 text-start m-0">References</h1>
-      </div>
-
-      <div class="col-lg-9">
-        <p class="m-0">
-          {% for entry in site.data.bio.references %}
-            {{ entry.name }}
-            {% if entry.reference and entry.reference.size > 0 %}
-              <em>{{ entry.reference }}</em>
-            {% endif %}
-          {% endfor %}
-        </p>
-      </div>
-    </div>
-    {% endif %}
-  </div>
 </div>
+<!-- End page content -->
+</body>
+</html>
