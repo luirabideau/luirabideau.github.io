@@ -1,7 +1,7 @@
-<!------------------ Created by Lui Rabideau, due on 12/15/2023 ---------------------->
+<!------------------ Created by Lui Rabideau, due on 5/19/2024 ----------------------->
 <!-- Design from W3schools: W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes -->
 <!-------- (https://www.w3schools.com/w3css/tryw3css_templates_architect.htm) -------->
-<!----------------------------- UHM ITM352 Assignment 3 ------------------------------>
+<!-------------- Lui Rabideau Personal Website [luirabideau.github.io] --------------->
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,49 +13,46 @@
 <link rel="stylesheet" href="./css/main.css">
 <link rel="icon" href="./images/letterR.ico" type="image/x-icon">
 <link rel="shortcut icon" href="./images/letterR.png" type="image/png">
+
+
+<style>
+  body {
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+
 </head>
 <body>
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-     <a href="./index.html" class="w3-bar-item w3-button"><b>Lui</b> Rabideau</a>
+     <a href="./index.html" class="w3-bar-item w3-button">Lui <b>Rabideau</b></a>
      <!-- Float links to the right. Hide them on small screens -->
      <div class="w3-right w3-hide-small">
       <a href="./education.html" class="w3-bar-item w3-button">Education</a>
-      <a href="./experiences.html" class="w3-bar-item w3-button">Experiences</a>
       <a href="./resume.html" class="w3-bar-item w3-button">Resume</a>
-      <a href="./hobbies.html" class="w3-bar-item w3-button">Hobbies</a>
+      <a href="./interests.html" class="w3-bar-item w3-button">Interests</a>
     </div>
     </div>
    </div>
 <br><br><br><br>
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-    <img class="w3-image" src="./images/main.jpg" alt="Architecture" width="1500" height="800">
-    <div class="w3-display-middle w3-margin-top w3-center">
-      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Ryer</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
-    </div>
-</header>
 <!-- Page content -->
 <div class="w3-content w3-padding content" style="max-width:1564px">
 <!-- Welcome Section -->
-    <div class="w3-container w3-padding-32">
-      <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Welcome to <b>Ryer</b> Architects</h2>
-      <p style="text-align: center; font-size: medium;">
-        At Ryer, we believe that our architecture is more than just creating models of buildings; it's about shaping environments that inspire and elevate the human experience.
-      </p><p style="text-align: center;"> 
+<div class="container">
+  <h2 id="headingName">Professional Experience</h2>
         Established 2017, our firm is a collective of passionate architects and designers dedicated to crafting pieces that seamlessly blend aesthetics, functionality, and sustainability.
-      </p>
-    </div>
+</div>
     <!-- Container -->
-    <div>
       <div class="container">
-        <h2 id="headingName"></h2>
+        <h2 id="headingName">Projects</h2>
             <!-- Generates the products -->
             <div class="product">
               <div class="product-item">
                 <img class="product-image" src="${products[i].image}">
-                <div class="product-title">brand</div>
+                <div class="product-title">ITM352 E-Commerce Website</div>
                 <div class="product-description">description</div>
                 <span class="product-price">price</span>
                 <div class="product-avaliability">Product Avaliability</div>
@@ -64,28 +61,22 @@
             <div class="product">
               <div class="product-item">
                 <img class="product-image" src="${products[i].image}">
-                <div class="product-title">brand</div>
+                <div class="product-title">EE160 Alien Taxi Game</div>
                 <div class="product-description">description</div>
                 <span class="product-price">price</span>
                 <div class="product-avaliability">Product Avaliability</div>
               </div>
             </div>
       </div>
-      <!-- Checkout Form Begin -->  
-
-      <!-- Checkout Form End -->
-      <!-- Add to Cart Form Begin -->
-
-      <!-- Add to Cart Form End -->
-    </div>
     <!-- About Section -->
-    <div class="w3-container w3-padding-32" id="about">
-      <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
-        <p>
-          At Ryer, we embrace innovation and stay at the forefront of design trends and technologies. We are committed to sustainable practices, integrating eco-friendly solutions into our designs to create spaces that are not only visually stunning but also environmentally responsible.
-        </p><p>
-          Collaboration is at the heart of our process. We work closely with our clients, listening to their aspirations and concerns, to co-create spaces that reflect their vision. Our transparent communication, attention to detail, and commitment to timelines ensure a seamless experience from concept to completion.
-        </p>
+    <div class="container">
+      <h2 id="headingName">Volunteer</h2>
+      <p>
+        At Ryer, we embrace innovation and stay at the forefront of design trends and technologies. We are committed to sustainable practices, integrating eco-friendly solutions into our designs to create spaces that are not only visually stunning but also environmentally responsible.
+      </p><p>
+        Collaboration is at the heart of our process. We work closely with our clients, listening to their aspirations and concerns, to co-create spaces that reflect their vision. Our transparent communication, attention to detail, and commitment to timelines ensure a seamless experience from concept to completion.
+      </p>
+    </div>
     </div>
     <!-- Image of location/map -->
     <div class="w3-container">
