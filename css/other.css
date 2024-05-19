@@ -4,6 +4,10 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+table {
+    border-collapse: collapse;
+
+}
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -26,6 +30,15 @@ body {
     max-height: 250px;
     object-fit: cover;
 }
+.school-image {
+    max-height: 100px;
+    object-fit: cover;
+}
+.pfp {
+    max-width: 25%;
+    padding: 20px;
+    border-radius: 50%;
+};
 .product-title {
     font-size: 20px;
     font-weight: bold;
