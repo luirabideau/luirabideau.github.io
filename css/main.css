@@ -3,7 +3,6 @@
     padding: 20px;
 }
 
-
 html {
     box-sizing: border-box
 }
@@ -197,7 +196,9 @@ h3 {
 }
 
 h4 {
-    font-size: 20px
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
 }
 
 h5 {
@@ -505,12 +506,13 @@ a {
     float: left;
     width: auto;
     border: none;
-    display: block;
+    display:table-column;
     outline: 0
 }
 
 .w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click {
     position: static;
+    position: -webkit-sticky; /* Safari */
     float: left
 }
 
@@ -826,7 +828,7 @@ a {
 }
 
 @media (max-width: 992px) {
-    .w3-sidebar.w3-collapse {
+    .w3-sidebar.w3-collapse.w3-bar {
         display:none
     }
 
