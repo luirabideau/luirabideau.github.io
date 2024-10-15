@@ -1,9 +1,5 @@
-<!------------------ Created by Lui Rabideau, due on 5/19/2024 ----------------------->
-<!-- Design from W3schools: W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes -->
-<!-------- (https://www.w3schools.com/w3css/tryw3css_templates_architect.htm) -------->
-<!-------------- Lui Rabideau Personal Website [luirabideau.github.io] --------------->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Resume</title>
 <meta charset="UTF-8">
@@ -13,8 +9,43 @@
 <link rel="stylesheet" href="./css/main.css">
 <link rel="icon" href="./images/letterR.ico" type="image/x-icon">
 <link rel="shortcut icon" href="./images/letterR.png" type="image/png">
+<style>
+  /* Flexbox styling for better layout */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .left-column, .right-column {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .left-column {
+    flex: 1;
+    max-width: 35%;
+  }
+
+  .right-column {
+    flex: 2;
+    max-width: 65%;
+  }
+
+  /* Styling for section headers */
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+</style>
 </head>
 <body>
+
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
@@ -27,62 +58,68 @@
     </div>
   </div>
 </div>
+
 <br><br>
+
 <!-- Page content -->
 <div class="container">
-  <!-- Name and Photo -->
-  <div class="w3-content w3-padding content w3-border-bottom w3-border-light-grey" style="max-width:1564px;">
-    <span style="font-size: 60px;">Lui Rabideau</span><br>
-    <span style="font-size: 20px;">Graduate Management Information Systems Student</span><br>
+  <!-- Left Column -->
+  <div class="left-column">
+    <div class="section-title">ACHIEVEMENTS</div>
+    <h4>Shodan Candidate, Brown Belt</h4> 
+    <p>Aikido Yuishinkai<br>2014 – Present</p>
+
+    <h4>VP of Leadership</h4>
+    <p>Phi Theta Kappa Honor Society<br>Fall 2021 – 2022</p>
+
+    <div class="section-title">VOLUNTEER</div>
+    <h4>Instructor and Board Member</h4>
+    <p>Kaneohe Aikido Club<br>2016 – Present<br>Instructed children and young adults in self-defense techniques and physical fitness.</p>
+
+    <h4>Director of ITM Learning</h4>
+    <p>Information Technology Management Association<br>Spring 2024</p>
+
+    <h4>VP of Leadership</h4>
+    <p>Phi Theta Kappa Honor Society<br>Fall 2022<br>Coordinated a Christmas gift drive benefiting over 200 children.</p>
+
+    <div class="section-title">SKILLS</div>
+    <ul>
+      <li>JavaScript and C++</li>
+      <li>Advanced Mathematics</li>
+      <li>Excel, Word, and PowerPoint</li>
+    </ul>
   </div>
-  <!-- Everything Else -->
-        <div class="product-item">
-  <div class="w3-content w3-padding content" style="max-width:1564px">
-    <section style="max-width: 35%; float: left; vertical-align: top; padding-right: 5px;">
-      <div style="font-size: 20px; font-weight: bold;">ACHIEVEMENTS</div>
-        <h4>Shodan Candidate, Brown Belt</h4> 
-          <p>Aikido Yuishinkai<br>2014 – Present</p>
-        <h4>VP of Leadership</h4>
-          <p>Phi Theta Kappa Honor Society<br>Fall 2021 – 2022</p>
-      <div style="font-size: 20px; font-weight: bold;">VOLUNTEER</div>
-        <h4>Instructor and Board Member</h4> 2016 – Present
-          <p>Kaneohe Aikido Club<br>Instructed children and young adults in the principles of self-defense techniques and physical fitness.</p>
-        <h4>Director of ITM Learning</h4> 
-          <p>Information Technology Management Association at UHM<br>Spring 2024</p>
-        <h4>VP of Leadership</h4> Fall 2022
-          <p>Phi Theta Kappa Honor Society<br>Coordinated and executed a Christmas gift drive benefiting more than 200 children.</p>
-      <div style="font-size: 20px; font-weight: bold;">SKILLS</div>
-        <ul>
-          <li>JavaScript and C++</li>
-          <li>Advanced Mathematics</li>
-          <li>Excel, Word, and PowerPoint</li>
-        </ul>
-    </section>
-    <section style="max-width: 65%; float: right; vertical-align: top; padding-left: 5px;">
-      <div style="font-size: 20px; font-weight: bold;">EDUCATION</div>
-        <h4>MS in Information Systems <span style="font-size: medium;">expected Fall 2025</span></h4> 
-          <p>University of Hawaii at Manoa</p>
-        <h4>BBA in Management Information Systems<span style="font-size: medium;"> expected Fall 2024</span></h4>
-          <p>University of Hawaii at Manoa</p>
-        <h4>AS in Science in Engineering<span style="font-size: medium;"> awarded 2023</span></h4>
-          <p>Windward Community College<br>Dean’s List, GPA: 4.00</p>
-      <div style="font-size: 20px; font-weight: bold">PROJECTS</div>
-        <h4>E-Commerce Website (Solo Project)</h4><p>2023
-        Designed and developed a web application for the final project of an Information Technology Management class.</p>
-        <h4>Alien Taxi (Group Project)</h4> <p>2022
-        Led a team of undergraduate students to develop a 2D platform game for an Electrical Engineering class.</p>
-      <div style="font-size: 20px; font-weight: bold;">PROFESSIONAL EXPERIENCE</div>
-        <h4>Membership Support Intern</h4> 
-          <p>Chamber of Commerce Hawaii SPRING 2024</p>
-        <h4>ITM 352 Programming Application Systems Teacher's Assiant</h4> 
-          <p> SPRING 2024, Evaluated assignments, produced instructional video content, and provided tutoring to students.</p>
-        <h4>General Merchandise Team Member</h4> 
-          <p>Target Corporation 2020 – 2023</p>
-    </section>
+
+  <!-- Right Column -->
+  <div class="right-column">
+    <div class="section-title">EDUCATION</div>
+    <h4>MS in Information Systems <span style="font-size: medium;">expected Fall 2025</span></h4>
+    <p>University of Hawaii at Manoa</p>
+
+    <h4>BBA in Management Information Systems <span style="font-size: medium;">expected Fall 2024</span></h4>
+    <p>University of Hawaii at Manoa</p>
+
+    <h4>AS in Science in Engineering <span style="font-size: medium;">awarded 2023</span></h4>
+    <p>Windward Community College<br>Dean’s List, GPA: 4.00</p>
+
+    <div class="section-title">PROJECTS</div>
+    <h4>E-Commerce Website (Solo Project)</h4>
+    <p>2023<br>Designed and developed a web application for the final project of an ITM class.</p>
+
+    <h4>Alien Taxi (Group Project)</h4>
+    <p>2022<br>Led a team of students to develop a 2D platform game for an Electrical Engineering class.</p>
+
+    <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+    <h4>Membership Support Intern</h4>
+    <p>Chamber of Commerce Hawaii<br>Spring 2024</p>
+
+    <h4>ITM 352 Programming Application Systems TA</h4>
+    <p>Spring 2024<br>Evaluated assignments, produced instructional videos, and provided student tutoring.</p>
+
+    <h4>General Merchandise Team Member</h4>
+    <p>Target Corporation<br>2020 – 2023</p>
   </div>
 </div>
-  </div>
-</body>
 <!-- End page content -->
 </body>
 </html>
